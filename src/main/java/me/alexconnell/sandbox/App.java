@@ -8,6 +8,17 @@ public class App
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hi there everybody!" );
+        String myString = "Hi there everybody!";
+        int indent = 0 ;
+
+        for (String word : myString.split(" ")){
+            System.out.println(word);
+            for(int i = 0; i<=indent; i++){
+            System.out.print("\t");
+            }
+            indent++;
+        }
+
+
     }
 }
